@@ -211,11 +211,11 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 .head-inner { display: flex; align-items: center; justify-content: space-between; height: 80px; }
 .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink); }
-.brand svg { width: 30px; height: 30px; transition: transform 400ms cubic-bezier(.22,.9,.3,1); }
+.brand svg { width: 36px; height: 36px; transition: transform 400ms cubic-bezier(.22,.9,.3,1); }
 .brand:hover svg { transform: rotate(-12deg) scale(1.06); }
 .brand span {
   font-family: 'Unbounded', var(--font-sans);
-  font-size: 1.0625rem;
+  font-size: 1.4375rem;
   font-weight: 700;
   letter-spacing: -0.02em;
   background: linear-gradient(100deg, var(--ink) 0%, var(--ink) 35%, var(--violet-light) 68%, var(--cyan) 100%);
