@@ -87,6 +87,8 @@ ul { margin: 0; padding: 0; list-style: none; }
 .skip { position: absolute; left: -9999px; top: 0; background: var(--brass); color: #fff; padding: var(--s-2) var(--s-3); z-index: 100; }
 .skip:focus { left: 0; }
 
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
+
 /* --- layout ------------------------------------------------------------ */
 
 .wrap { width: 100%; max-width: var(--container); margin: 0 auto; padding: 0 var(--s-5); }
@@ -326,11 +328,58 @@ ul { margin: 0; padding: 0; list-style: none; }
 @keyframes rise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
 @media (max-width: 980px) {
   .hero-grid { grid-template-columns: 1fr; }
-  .hero-mark { order: 1; max-width: 120px; margin: var(--s-5) auto 0; }
+  .hero-mark { order: 1; max-width: 300px; margin: var(--s-5) auto 0; }
 }
 
-.hero-mark { text-align: center; }
-.hero-mark svg { animation: float 6s ease-in-out infinite; }
+.hero-mark { text-align: center; max-width: 300px; margin: 0 auto; }
+
+/* --- services diagram (hero) -------------------------------------------- */
+
+.services-diagram { width: 100%; height: auto; overflow: visible; }
+.diagram-spoke {
+  stroke: var(--grout);
+  stroke-width: 1.5;
+  stroke-dasharray: 95;
+  stroke-dashoffset: 95;
+  animation: spoke-draw 700ms cubic-bezier(.22,.9,.3,1) forwards;
+  transition: stroke 300ms ease;
+}
+.diagram-spoke:nth-of-type(1) { animation-delay: 950ms; }
+.diagram-spoke:nth-of-type(2) { animation-delay: 1010ms; }
+.diagram-spoke:nth-of-type(3) { animation-delay: 1070ms; }
+.diagram-spoke:nth-of-type(4) { animation-delay: 1130ms; }
+.diagram-spoke:nth-of-type(5) { animation-delay: 1190ms; }
+@keyframes spoke-draw { to { stroke-dashoffset: 0; } }
+
+.diagram-hub-ring { fill: var(--surface); stroke: var(--grout); stroke-width: 1.5; }
+
+.diagram-node {
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: node-pop 480ms cubic-bezier(.22,.9,.3,1) forwards;
+  cursor: pointer;
+}
+.diagram-node:nth-of-type(1) { animation-delay: 1150ms; }
+.diagram-node:nth-of-type(2) { animation-delay: 1220ms; }
+.diagram-node:nth-of-type(3) { animation-delay: 1290ms; }
+.diagram-node:nth-of-type(4) { animation-delay: 1360ms; }
+.diagram-node:nth-of-type(5) { animation-delay: 1430ms; }
+@keyframes node-pop { from { opacity: 0; transform: scale(.4); } to { opacity: 1; transform: scale(1); } }
+
+.diagram-node circle {
+  fill: var(--surface);
+  stroke: var(--grout);
+  stroke-width: 1.5;
+  transition: stroke 250ms ease, transform 250ms cubic-bezier(.22,.9,.3,1);
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.diagram-node .diagram-icon { stroke: var(--cyan); fill: none; }
+.diagram-label { fill: var(--slate); font: 500 11px var(--font-sans); text-anchor: middle; letter-spacing: 0.02em; transition: fill 250ms ease; }
+.diagram-node:hover circle { stroke: var(--brass); transform: scale(1.08); }
+.diagram-node:hover .diagram-label { fill: var(--ink); }
+.diagram-node:focus-visible circle { stroke: var(--cyan); }
 .hero-mark-tag {
   margin: var(--s-3) 0 0;
   font-family: 'Unbounded', var(--font-sans);
@@ -342,7 +391,6 @@ ul { margin: 0; padding: 0; list-style: none; }
   opacity: 0;
   animation: rise 700ms cubic-bezier(.22,.9,.3,1) 900ms forwards;
 }
-@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
 .ring-piece { transform: translateX(22px); opacity: 0; animation: seat 900ms cubic-bezier(0.22,0.9,0.3,1) 500ms forwards; }
 @keyframes seat { to { transform: translateX(0); opacity: 1; } }
 
@@ -635,8 +683,9 @@ ul { margin: 0; padding: 0; list-style: none; }
     transition-duration: 0.01ms !important;
   }
   .ring-piece { transform: none; opacity: 1; }
-  .hero-mark svg { animation: none; }
   .hero h1, .hero .lead, .hero .actions, .hero-mark-tag { opacity: 1; transform: none; }
+  .diagram-spoke { stroke-dashoffset: 0; }
+  .diagram-node { opacity: 1; transform: none; }
   .js .seam, .js .card, .js .pillar, .js .step,
   .js .commitments li, .js .faq details, .js .price-line {
     opacity: 1;
