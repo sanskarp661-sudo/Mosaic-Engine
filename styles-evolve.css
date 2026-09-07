@@ -310,16 +310,17 @@ ul { margin: 0; padding: 0; list-style: none; }
   content: "";
   position: absolute;
   inset: -10% -10%;
-  background-image:
-    conic-gradient(from 90deg at 20% 20%, transparent 25%, rgba(160,86,255,0.04) 25% 50%, transparent 50% 75%, rgba(159,255,255,0.03) 75%);
-  background-size: 72px 72px;
+  opacity: 0.4;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20180%20180%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23D9C9EF%22%20stroke-width%3D%221.3%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%220.9%22%3E%3Cg%20transform%3D%22translate%2810%2C14%29%20rotate%28-8%29%20scale%280.85%29%22%3E%3Crect%20x%3D%223%22%20y%3D%224.5%22%20width%3D%2218%22%20height%3D%2215%22%20rx%3D%222%22/%3E%3Cline%20x1%3D%223%22%20y1%3D%229%22%20x2%3D%2221%22%20y2%3D%229%22/%3E%3Ccircle%20cx%3D%226%22%20cy%3D%226.7%22%20r%3D%22.5%22%20fill%3D%22%23D9C9EF%22%20stroke%3D%22none%22/%3E%3Ccircle%20cx%3D%228.5%22%20cy%3D%226.7%22%20r%3D%22.5%22%20fill%3D%22%23D9C9EF%22%20stroke%3D%22none%22/%3E%3C/g%3E%3Cg%20transform%3D%22translate%28138%2C88%29%20rotate%28-6%29%20scale%280.85%29%22%3E%3Crect%20x%3D%227%22%20y%3D%222.5%22%20width%3D%2210%22%20height%3D%2219%22%20rx%3D%222.2%22/%3E%3Cline%20x1%3D%227%22%20y1%3D%2217.5%22%20x2%3D%2217%22%20y2%3D%2217.5%22/%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2219.7%22%20r%3D%22.6%22%20fill%3D%22%23D9C9EF%22%20stroke%3D%22none%22/%3E%3C/g%3E%3Cg%20transform%3D%22translate%2818%2C112%29%20rotate%286%29%20scale%280.85%29%22%3E%3Cellipse%20cx%3D%2212%22%20cy%3D%225.5%22%20rx%3D%227%22%20ry%3D%222.5%22/%3E%3Cpath%20d%3D%22M5%205.5v6c0%201.4%203.1%202.5%207%202.5s7-1.1%207-2.5v-6%22/%3E%3Cpath%20d%3D%22M5%2011.5v6c0%201.4%203.1%202.5%207%202.5s7-1.1%207-2.5v-6%22/%3E%3C/g%3E%3Cg%20transform%3D%22translate%2888%2C132%29%20rotate%28-10%29%20scale%280.85%29%22%3E%3Cpath%20d%3D%22M3%2010v4a1%201%200%200%200%201%201h2l7%204V5L6%209H4a1%201%200%200%200-1%201z%22/%3E%3Cpath%20d%3D%22M16.5%209a4.2%204.2%200%200%201%200%206%22/%3E%3Cpath%20d%3D%22M19.5%206.7a8%208%200%200%201%200%2010.6%22/%3E%3C/g%3E%3Cg%20transform%3D%22translate%2896%2C10%29%20rotate%2812%29%20scale%280.85%29%22%3E%3Cpath%20d%3D%22M12%202.5%20L13.6%209.4%20L20.5%2012%20L13.6%2014.6%20L12%2021.5%20L10.4%2014.6%20L3.5%2012%20L10.4%209.4%20Z%22%20fill%3D%22%23D9C9EF%22%20stroke%3D%22none%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 160px 160px;
   -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, transparent 30%, black 100%);
   mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, transparent 30%, black 100%);
-  animation: mosaic-drift 40s linear infinite;
+  animation: mosaic-drift 50s linear infinite;
   pointer-events: none;
   z-index: 0;
 }
-@keyframes mosaic-drift { to { background-position: 576px 576px; } }
+@keyframes mosaic-drift { to { background-position: 640px 640px; } }
 .hero > .wrap { position: relative; z-index: 1; }
 .hero-grid { display: grid; grid-template-columns: 1fr 340px; gap: var(--s-6); align-items: center; }
 .hero h1 { font-size: var(--t-display); margin-bottom: var(--s-4); max-width: 15ch; opacity: 0; animation: rise 800ms cubic-bezier(.22,.9,.3,1) 100ms forwards; }
@@ -328,58 +329,12 @@ ul { margin: 0; padding: 0; list-style: none; }
 @keyframes rise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
 @media (max-width: 980px) {
   .hero-grid { grid-template-columns: 1fr; }
-  .hero-mark { order: 1; max-width: 300px; margin: var(--s-5) auto 0; }
+  .hero-mark { order: 1; max-width: 150px; margin: var(--s-5) auto 0; }
 }
 
-.hero-mark { text-align: center; max-width: 300px; margin: 0 auto; }
-
-/* --- services diagram (hero) -------------------------------------------- */
-
-.services-diagram { width: 100%; height: auto; overflow: visible; }
-.diagram-spoke {
-  stroke: var(--grout);
-  stroke-width: 1.5;
-  stroke-dasharray: 95;
-  stroke-dashoffset: 95;
-  animation: spoke-draw 700ms cubic-bezier(.22,.9,.3,1) forwards;
-  transition: stroke 300ms ease;
-}
-.diagram-spoke:nth-of-type(1) { animation-delay: 950ms; }
-.diagram-spoke:nth-of-type(2) { animation-delay: 1010ms; }
-.diagram-spoke:nth-of-type(3) { animation-delay: 1070ms; }
-.diagram-spoke:nth-of-type(4) { animation-delay: 1130ms; }
-.diagram-spoke:nth-of-type(5) { animation-delay: 1190ms; }
-@keyframes spoke-draw { to { stroke-dashoffset: 0; } }
-
-.diagram-hub-ring { fill: var(--surface); stroke: var(--grout); stroke-width: 1.5; }
-
-.diagram-node {
-  opacity: 0;
-  transform-box: fill-box;
-  transform-origin: center;
-  animation: node-pop 480ms cubic-bezier(.22,.9,.3,1) forwards;
-  cursor: pointer;
-}
-.diagram-node:nth-of-type(1) { animation-delay: 1150ms; }
-.diagram-node:nth-of-type(2) { animation-delay: 1220ms; }
-.diagram-node:nth-of-type(3) { animation-delay: 1290ms; }
-.diagram-node:nth-of-type(4) { animation-delay: 1360ms; }
-.diagram-node:nth-of-type(5) { animation-delay: 1430ms; }
-@keyframes node-pop { from { opacity: 0; transform: scale(.4); } to { opacity: 1; transform: scale(1); } }
-
-.diagram-node circle {
-  fill: var(--surface);
-  stroke: var(--grout);
-  stroke-width: 1.5;
-  transition: stroke 250ms ease, transform 250ms cubic-bezier(.22,.9,.3,1);
-  transform-box: fill-box;
-  transform-origin: center;
-}
-.diagram-node .diagram-icon { stroke: var(--cyan); fill: none; }
-.diagram-label { fill: var(--slate); font: 500 11px var(--font-sans); text-anchor: middle; letter-spacing: 0.02em; transition: fill 250ms ease; }
-.diagram-node:hover circle { stroke: var(--brass); transform: scale(1.08); }
-.diagram-node:hover .diagram-label { fill: var(--ink); }
-.diagram-node:focus-visible circle { stroke: var(--cyan); }
+.hero-mark { text-align: center; }
+.hero-mark svg { animation: mark-float 6s ease-in-out infinite; }
+@keyframes mark-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
 .hero-mark-tag {
   margin: var(--s-3) 0 0;
   font-family: 'Unbounded', var(--font-sans);
@@ -683,9 +638,8 @@ ul { margin: 0; padding: 0; list-style: none; }
     transition-duration: 0.01ms !important;
   }
   .ring-piece { transform: none; opacity: 1; }
+  .hero-mark svg { animation: none; }
   .hero h1, .hero .lead, .hero .actions, .hero-mark-tag { opacity: 1; transform: none; }
-  .diagram-spoke { stroke-dashoffset: 0; }
-  .diagram-node { opacity: 1; transform: none; }
   .js .seam, .js .card, .js .pillar, .js .step,
   .js .commitments li, .js .faq details, .js .price-line {
     opacity: 1;
