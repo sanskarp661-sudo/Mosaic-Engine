@@ -27,6 +27,9 @@
   "address": { "@type": "PostalAddress", "addressLocality": "Gurugram", "addressRegion": "Haryana", "addressCountry": "IN" }
 }
 </script>
+<script type="importmap">
+{ "imports": { "three": "https://unpkg.com/three@0.160.0/build/three.module.js" } }
+</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -66,7 +69,7 @@
             <a class="link" href="#system">See how it fits together</a>
           </div>
         </div>
-        <div class="hero-mark">
+        <div class="hero-mark" data-hero-3d>
           <svg viewBox="12 12 96 96" role="img" aria-label="The Mosaic Engine mark: a broken ring closed by a single fitted piece.">
             <path d="M95.95 77.53 A40 40 0 1 1 95.95 42.47 L93.26 43.78 A5 5 0 0 0 84.27 48.16 L81.57 49.48 A24 24 0 1 0 81.57 70.52 L84.27 71.84 A5 5 0 0 1 93.26 76.22 Z" fill="#FFFFFF"/>
             <path class="ring-piece" d="M95.95 77.53 A40 40 0 0 0 95.95 42.47 L93.26 43.78 A5 5 0 0 0 84.27 48.16 L81.57 49.48 A24 24 0 0 1 81.57 70.52 L84.27 71.84 A5 5 0 0 1 93.26 76.22 Z" fill="#A056FF"/>
@@ -366,5 +369,6 @@
 </footer>
 
 <script src="animations.js" defer></script>
+<script type="module" src="hero-3d.js"></script>
 </body>
 </html>
