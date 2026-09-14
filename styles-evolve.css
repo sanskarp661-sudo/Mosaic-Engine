@@ -340,17 +340,6 @@ ul { margin: 0; padding: 0; list-style: none; }
 .hero-mark { text-align: center; }
 .hero-mark svg { animation: mark-float 6s ease-in-out infinite; }
 @keyframes mark-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
-.hero-3d-canvas {
-  display: block;
-  width: 100%;
-  max-width: 340px;
-  aspect-ratio: 1 / 1;
-  margin: 0 auto;
-  cursor: grab;
-  opacity: 0;
-  transition: opacity 500ms ease;
-}
-.hero-3d-canvas.is-ready { opacity: 1; }
 .hero-mark-tag {
   display: inline-block;
   margin: var(--s-3) 0 0;
