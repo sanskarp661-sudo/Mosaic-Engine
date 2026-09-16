@@ -13,8 +13,7 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles-evolve.css?v=3">
+<link rel="stylesheet" href="styles-evolve.css?v=4">
 <script>document.documentElement.classList.add('js')</script>
 <script type="application/ld+json">
 {
@@ -59,46 +58,70 @@
     <div class="wrap">
       <div class="hero-grid">
         <div>
-          <h1>We build what your business runs on,</h1>
+          <p class="eyebrow">Gurugram, India · Founder-led</p>
+          <h1>We build what your business runs on<span class="accent">,</span></h1>
           <p class="lead">Mosaic Engine builds your website, your app, your ERP, your marketing engine and your AI automation, then connects them so they behave as a single operation instead of five tools you have to hold together.</p>
           <div class="actions">
             <a class="btn" href="contact.html">Book a free 30-minute systems audit</a>
-            <a class="link" href="#system">See how it fits together</a>
+            <a class="link-quiet" href="#system">See how it fits together</a>
           </div>
         </div>
-        <div class="hero-mark">
-          <svg viewBox="12 12 96 96" role="img" aria-label="The Mosaic Engine mark: a broken ring closed by a single fitted piece.">
-            <path d="M95.95 77.53 A40 40 0 1 1 95.95 42.47 L93.26 43.78 A5 5 0 0 0 84.27 48.16 L81.57 49.48 A24 24 0 1 0 81.57 70.52 L84.27 71.84 A5 5 0 0 1 93.26 76.22 Z" fill="#FFFFFF"/>
-            <path class="ring-piece" d="M95.95 77.53 A40 40 0 0 0 95.95 42.47 L93.26 43.78 A5 5 0 0 0 84.27 48.16 L81.57 49.48 A24 24 0 0 1 81.57 70.52 L84.27 71.84 A5 5 0 0 1 93.26 76.22 Z" fill="#A056FF"/>
-          </svg>
-          <p class="hero-mark-tag">Built to run.</p>
+        <div class="hero-diagram" aria-hidden="true">
+          <div class="hero-diagram-grid">
+            <div class="hero-diagram-row"><div class="hero-diagram-box">WEB</div><div class="hero-diagram-dash"></div><div class="hero-diagram-node"></div></div>
+            <div class="hero-diagram-row"><div class="hero-diagram-box">APP</div><div class="hero-diagram-dash"></div><div class="hero-diagram-node"></div></div>
+            <div class="hero-diagram-row"><div class="hero-diagram-box">ERP</div><div class="hero-diagram-dash"></div><div class="hero-diagram-node"></div></div>
+            <div class="hero-diagram-row"><div class="hero-diagram-box">MARKETING</div><div class="hero-diagram-dash"></div><div class="hero-diagram-node"></div></div>
+            <div class="hero-diagram-row"><div class="hero-diagram-box">AI AUTOMATION</div><div class="hero-diagram-dash"></div><div class="hero-diagram-node"></div></div>
+          </div>
+          <div class="hero-diagram-engine">ONE<br>ENGINE</div>
+          <div class="hero-diagram-sq" style="width:34px;height:34px;background:rgba(58,98,96,0.16);top:4%;right:20%"></div>
+          <div class="hero-diagram-sq" style="width:40px;height:40px;background:var(--cyan);bottom:4%;right:4%"></div>
         </div>
       </div>
       <ul class="commitments">
-        <li>Fixed scope, fixed price</li>
-        <li>Working software in 14 days</li>
-        <li>You own the code and every account</li>
-        <li>Founder-led delivery</li>
+        <li>
+          <p class="eyebrow" style="margin-bottom:10px">Built to run</p>
+          <p style="font-weight:800;margin:0">Fixed scope, fixed price</p>
+        </li>
+        <li><strong>14</strong>days to working software, not a mockup</li>
+        <li><strong>100%</strong>yours — the code and every account</li>
+        <li><strong>1</strong>person building it — the founder</li>
       </ul>
     </div>
   </section>
 
   <!-- problem -->
-  <section class="section inverted">
+  <section class="section">
     <div class="wrap">
-      <div class="seam col-8">
-        <div class="seam-head">
-          <p class="eyebrow">The problem</p>
-          <h2>Most businesses don't have a technology problem. They have a disconnection problem.</h2>
+      <div class="split">
+        <div class="seam">
+          <div class="seam-head">
+            <p class="eyebrow">The problem</p>
+            <h2>Most businesses don't have a technology problem. They have a disconnection problem.</h2>
+          </div>
         </div>
-        <p class="lead" style="margin-top:var(--s-4)">The website doesn't talk to the CRM. Orders get re-typed into a spreadsheet. Leads sit unanswered for six hours. Ad spend goes out with no reliable read on what came back. Every tool works. Nothing works together.</p>
-        <p class="pull">The real cost isn't the software. It's the hours your team spends being the integration.</p>
+        <div>
+          <p class="prose">The website doesn't talk to the CRM. Orders get re-typed into a spreadsheet. Leads sit unanswered for six hours. Ad spend goes out with no reliable read on what came back. Every tool works. Nothing works together.</p>
+          <p class="pull">The real cost isn't the software. It's the hours your team spends being the integration.</p>
+          <div class="chain-diagram" aria-hidden="true">
+            <div class="chain-box">SITE</div>
+            <div class="chain-dash"></div><span class="chain-break">✕</span><div class="chain-dash"></div>
+            <div class="chain-box">CRM</div>
+            <div class="chain-dash"></div><span class="chain-break">✕</span><div class="chain-dash"></div>
+            <div class="chain-box">SHEET</div>
+            <div class="chain-dash"></div><span class="chain-break">✕</span><div class="chain-dash"></div>
+            <div class="chain-box">ADS</div>
+            <div class="chain-dash"></div><span class="chain-break">✕</span><div class="chain-dash"></div>
+            <div class="chain-box">WA</div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- the system -->
-  <section class="section" id="system">
+  <section class="section" id="system" style="padding-top:0">
     <div class="wrap">
       <div class="seam">
         <div class="seam-head">
@@ -107,23 +130,23 @@
         </div>
         <p class="lead" style="margin-top:var(--s-3)">Each one earns its keep alone. Connected, they compound.</p>
 
-        <div style="margin-top:var(--s-6)">
+        <div style="margin-top:var(--s-5)">
           <article class="pillar">
-            <div class="pillar-num"><svg class="pillar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="15" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><circle cx="6" cy="6.7" r=".5" fill="currentColor" stroke="none"/><circle cx="8.5" cy="6.7" r=".5" fill="currentColor" stroke="none"/></svg><span>01</span></div>
+            <div class="pillar-num"><svg class="pillar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="15" rx="1"/><line x1="3" y1="9" x2="21" y2="9"/><circle cx="6" cy="6.7" r=".5" fill="currentColor" stroke="none"/><circle cx="8.5" cy="6.7" r=".5" fill="currentColor" stroke="none"/></svg><span>01</span></div>
             <div>
               <h3>A site that sells, not a brochure that sits.</h3>
               <p class="prose">Fast, responsive, built around one clear action per page. Modern stack, real performance budgets, structured so search engines and buyers both find what they came for.</p>
-              <p class="pillar-inc">Marketing sites · Ecommerce storefronts · Landing pages · Brand and UI design — <a class="link" href="web-development.html">Web development</a></p>
             </div>
+            <p class="pillar-inc">Marketing sites · Ecommerce · Landing pages · Brand and UI design<br><a class="link" href="web-development.html">Web development →</a></p>
           </article>
 
           <article class="pillar">
-            <div class="pillar-num"><svg class="pillar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.2"/><line x1="7" y1="17.5" x2="17" y2="17.5"/><circle cx="12" cy="19.7" r=".6" fill="currentColor" stroke="none"/></svg><span>02</span></div>
+            <div class="pillar-num"><svg class="pillar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="1.4"/><line x1="7" y1="17.5" x2="17" y2="17.5"/><circle cx="12" cy="19.7" r=".6" fill="currentColor" stroke="none"/></svg><span>02</span></div>
             <div>
               <h3>Put your business in your customer's pocket.</h3>
               <p class="prose">Mobile apps and customer portals that carry on where the website stops. Bookings, orders, accounts, notifications, all reading from the same data your team sees.</p>
-              <p class="pillar-inc">Customer apps · Internal tools · Client portals · Progressive web apps — <a class="link" href="app-development.html">App development</a></p>
             </div>
+            <p class="pillar-inc">Customer apps · Internal tools · Client portals · PWAs<br><a class="link" href="app-development.html">App development →</a></p>
           </article>
 
           <article class="pillar">
@@ -131,8 +154,8 @@
             <div>
               <h3>One source of truth for the entire company.</h3>
               <p class="prose">ERPNext implementation and custom modules, so sales, inventory, finance, HR and operations stop keeping five separate versions of the truth and start reading from one.</p>
-              <p class="pillar-inc">ERPNext setup · Custom modules · CRM sync · Migration off spreadsheets — <a class="link" href="erpnext-implementation.html">ERP solutions</a></p>
             </div>
+            <p class="pillar-inc">ERPNext setup · Custom modules · CRM sync<br><a class="link" href="erpnext-implementation.html">ERP solutions →</a></p>
           </article>
 
           <article class="pillar">
@@ -140,8 +163,8 @@
             <div>
               <h3>Spend you can trace all the way to revenue.</h3>
               <p class="prose">SEO, Google Search and Meta campaigns wired directly into the CRM your sales team already uses. Every lead carries its source, so you know which rupee worked.</p>
-              <p class="pillar-inc">SEO · Google Ads · Meta Ads · Conversion tracking — <a class="link" href="digital-marketing.html">Digital marketing</a></p>
             </div>
+            <p class="pillar-inc">SEO · Google Ads · Meta Ads · Conversion tracking<br><a class="link" href="digital-marketing.html">Digital marketing →</a></p>
           </article>
 
           <article class="pillar">
@@ -149,8 +172,8 @@
             <div>
               <h3>The work that shouldn't need a person.</h3>
               <p class="prose">Lead qualification, WhatsApp replies, follow-up sequences, data entry, weekly reporting. Handled the moment they happen, including at 2am on a Sunday.</p>
-              <p class="pillar-inc">WhatsApp automation · Qualification agents · Workflow automation — <a class="link" href="ai-automation.html">AI automation</a></p>
             </div>
+            <p class="pillar-inc">WhatsApp automation · Qualification agents<br><a class="link" href="ai-automation.html">AI automation →</a></p>
           </article>
         </div>
       </div>
@@ -158,40 +181,59 @@
   </section>
 
   <!-- ecosystem -->
-  <section class="section" style="padding-top:0">
+  <section class="section inverted">
     <div class="wrap">
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker-track">
+          <span>BUILD · CONNECT · GROW · AUTOMATE</span>
+          <span>BUILD · CONNECT · GROW · AUTOMATE</span>
+          <span>BUILD · CONNECT · GROW · AUTOMATE</span>
+          <span>BUILD · CONNECT · GROW · AUTOMATE</span>
+        </div>
+      </div>
       <div class="seam col-8">
         <div class="seam-head">
-          <h2>Build. Connect. Grow. Automate.</h2>
+          <h2>One engine for your entire digital operation.</h2>
         </div>
-        <p class="lead" style="margin-top:var(--s-3)">One engine for your entire digital operation.</p>
         <p class="prose" style="margin-top:var(--s-4)">A lead clicks a Meta ad, lands on your site, gets qualified by AI over WhatsApp, appears in your ERP as an opportunity, triggers its own follow-up, and shows up in Monday's revenue report. Nobody re-typed anything. Nobody remembered to chase it.</p>
+      </div>
+      <div class="ecosystem-diagram">
+        <div class="ecosystem-node"><div class="node-dot"></div><h4>Meta ad</h4><p>Traced from the first click</p></div>
+        <div class="ecosystem-node"><div class="node-dot" style="background:var(--paper)"></div><h4>Your site</h4><p>One action per page</p></div>
+        <div class="ecosystem-node"><div class="node-dot"></div><h4>WhatsApp AI</h4><p>Qualified in seconds, any hour</p></div>
+        <div class="ecosystem-node"><div class="node-dot"></div><h4>ERP</h4><p>Lands as an opportunity</p></div>
+        <div class="ecosystem-node"><div class="node-dot"></div><h4>Follow-up</h4><p>Triggered by itself</p></div>
+        <div class="ecosystem-node"><div class="node-dot"></div><h4>Monday report</h4><p>Revenue, with its source</p></div>
       </div>
     </div>
   </section>
 
   <!-- why us -->
-  <section class="section" style="padding-top:0">
+  <section class="section">
     <div class="wrap">
       <div class="seam">
         <div class="seam-head">
           <p class="eyebrow">Why us</p>
           <h2>We're new. Here's why that isn't your risk.</h2>
         </div>
-        <div class="cards cards-2">
+        <div class="cards cards-3" style="margin-top:var(--s-5)">
           <div class="card">
+            <svg class="pillar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-bottom:var(--s-2)"><rect x="3" y="4.5" width="18" height="16" rx="1"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="7.5" y1="2.5" x2="7.5" y2="6.5"/><line x1="16.5" y1="2.5" x2="16.5" y2="6.5"/><rect x="6.5" y="12" width="3" height="3" fill="currentColor" stroke="none"/></svg>
             <h3>You see working software in 14 days.</h3>
             <p>First milestone is functional, not a mockup. If it isn't what you wanted, you've spent two weeks finding out instead of four months.</p>
           </div>
           <div class="card">
+            <svg class="pillar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-bottom:var(--s-2)"><rect x="2.5" y="5" width="19" height="13" rx="1"/><line x1="2.5" y1="9" x2="21.5" y2="9"/><rect x="6" y="12.5" width="5" height="3" fill="currentColor" stroke="none"/></svg>
             <h3>Fixed scope, fixed price.</h3>
             <p>Quoted before we start, in writing. No change-order surprises.</p>
           </div>
           <div class="card">
+            <svg class="pillar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-bottom:var(--s-2)"><rect x="4.5" y="10.5" width="15" height="10" rx="1"/><path d="M8 10.5V7a4 4 0 0 1 8 0v3.5"/></svg>
             <h3>You own everything.</h3>
             <p>Code, repository, hosting, domain, ad accounts, all registered in your name from day one. No hostage situation if you leave.</p>
           </div>
           <div class="card">
+            <svg class="pillar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-bottom:var(--s-2)"><rect x="3" y="4.5" width="14" height="10" rx="1"/><path d="M6.5 14.5v3l3.5-3" fill="none"/><rect x="10.5" y="9.5" width="3" height="3" fill="currentColor" stroke="none"/></svg>
             <h3>You talk to the person building it.</h3>
             <p>Direct access to the founder, not an account manager relaying messages.</p>
           </div>
@@ -211,19 +253,28 @@
         <p class="lead" style="margin-top:var(--s-3)">These are demonstration builds, not client projects. We'd rather show you working software and say so plainly than dress up stock photos as case studies.</p>
         <div class="cards cards-3">
           <article class="card">
-            <div class="card-media">Screenshot goes here</div>
+            <div class="card-media">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="1"/><circle cx="9" cy="10" r="1.6"/><path d="M3 16l5-4 4 3 5-6 4 5"/></svg>
+              <span>Bella Italia — restaurant site screenshot</span>
+            </div>
             <span class="card-tag">Web + Ecommerce</span>
             <h3>Bella Italia</h3>
             <p>Restaurant site with online reservations and menu management.</p>
           </article>
           <article class="card">
-            <div class="card-media">Screenshot goes here</div>
+            <div class="card-media">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="1"/><circle cx="9" cy="10" r="1.6"/><path d="M3 16l5-4 4 3 5-6 4 5"/></svg>
+              <span>MedCare Clinic — site and patient portal screenshot</span>
+            </div>
             <span class="card-tag">Web + Portal</span>
             <h3>MedCare Clinic</h3>
             <p>Clinic site with appointment booking and a patient portal.</p>
           </article>
           <article class="card">
-            <div class="card-media">Screenshot goes here</div>
+            <div class="card-media">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="1"/><circle cx="9" cy="10" r="1.6"/><path d="M3 16l5-4 4 3 5-6 4 5"/></svg>
+              <span>SmartERP — ERPNext dashboard screenshot</span>
+            </div>
             <span class="card-tag">ERP</span>
             <h3>SmartERP</h3>
             <p>ERPNext build covering inventory, purchase, sales, HR and accounting.</p>
@@ -241,21 +292,25 @@
         <div class="steps">
           <div class="step">
             <span class="step-num">01</span>
+            <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><line x1="15.3" y1="15.3" x2="21" y2="21"/></svg>
             <h3>Audit</h3>
             <p>We map how your systems connect today and where the hours leak. 30 minutes, free.</p>
           </div>
           <div class="step">
             <span class="step-num">02</span>
+            <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="1"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="3" x2="9" y2="21"/><rect x="9" y="9" width="6" height="6" fill="currentColor" stroke="none"/></svg>
             <h3>Blueprint</h3>
             <p>Fixed scope, fixed price, defined milestones, before any money changes hands.</p>
           </div>
           <div class="step">
             <span class="step-num">03</span>
+            <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7" fill="currentColor" stroke="none"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
             <h3>Build</h3>
             <p>Working software every two weeks. You see it, you use it, you redirect it.</p>
           </div>
           <div class="step">
             <span class="step-num">04</span>
+            <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 16a8 8 0 0 1 16 0"/><line x1="12" y1="16" x2="15.5" y2="11"/><circle cx="12" cy="16" r="1" fill="currentColor" stroke="none"/></svg>
             <h3>Run</h3>
             <p>Handover, documentation, training, and ongoing optimisation if you want it.</p>
           </div>
@@ -267,8 +322,8 @@
   <!-- faq -->
   <section class="section" style="padding-top:0">
     <div class="wrap">
-      <div class="seam">
-        <div class="seam-head"><h2>Questions</h2></div>
+      <div class="faq-layout">
+        <h2>Questions</h2>
         <div class="faq">
           <details open>
             <summary>You don't have client case studies. Why should I hire you?</summary>
@@ -311,7 +366,7 @@
         <p class="lead" style="margin-top:var(--s-3)">Thirty minutes, free, no slide deck. We map how your systems connect today and where the time is going. You keep the map whether or not you work with us.</p>
         <div class="actions">
           <a class="btn" href="contact.html">Book the audit</a>
-          <a class="link" href="https://wa.me/918827040680">Or WhatsApp +91 88270 40680</a>
+          <a class="btn-quiet" href="https://wa.me/918827040680">Or WhatsApp +91 88270 40680</a>
         </div>
       </div>
     </div>
@@ -323,18 +378,12 @@
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <a class="brand" href="index.html" style="margin-bottom:var(--s-3)">
-          <svg viewBox="12 12 96 96" aria-hidden="true">
-            <path d="M95.95 77.53 A40 40 0 1 1 95.95 42.47 L93.26 43.78 A5 5 0 0 0 84.27 48.16 L81.57 49.48 A24 24 0 1 0 81.57 70.52 L84.27 71.84 A5 5 0 0 1 93.26 76.22 Z" fill="#FFFFFF"/>
-            <path d="M95.95 77.53 A40 40 0 0 0 95.95 42.47 L93.26 43.78 A5 5 0 0 0 84.27 48.16 L81.57 49.48 A24 24 0 0 1 81.57 70.52 L84.27 71.84 A5 5 0 0 1 93.26 76.22 Z" fill="#A056FF"/>
-          </svg>
-          <span>mosaic engine</span>
-        </a>
+        <p class="foot-brand-name">mosaic engine</p>
         <p style="font-size:var(--t-small);color:var(--slate);max-width:34ch">We build what your business runs on. Gurugram, Haryana.</p>
         <div class="social" aria-label="Follow Mosaic Engine">
-          <a href="https://www.linkedin.com/company/mosaic-engine/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
-          <a href="https://wa.me/918827040680" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413"/></svg></a>
-          <a href="mailto:sanskar@mosaicengine.in" aria-label="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg></a>
+          <a href="https://www.linkedin.com/company/mosaic-engine/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://wa.me/918827040680" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="mailto:sanskar@mosaicengine.in">Email</a>
         </div>
       </div>
       <div>
