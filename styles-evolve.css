@@ -212,8 +212,14 @@ ul { margin: 0; padding: 0; list-style: none; }
   backdrop-filter: saturate(160%) blur(12px);
 }
 .head-inner { display: flex; align-items: center; justify-content: space-between; height: 76px; }
-.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
-.brand svg { width: 30px; height: 30px; flex-shrink: 0; }
+.brand { display: flex; align-items: center; gap: 9px; text-decoration: none; color: var(--ink); }
+.brand-mark { display: inline-grid; grid-template-columns: 1fr 1fr; gap: 2px; width: 18px; height: 18px; flex-shrink: 0; }
+.brand-mark i { display: block; font-style: normal; }
+.brand-mark i:nth-child(1) { background: var(--cyan); }
+.brand-mark i:nth-child(2) { background: var(--ink); }
+.brand-mark i:nth-child(3) { background: var(--ink); }
+.brand-mark i:nth-child(4) { background: var(--cyan); animation: brand-blink 2.4s ease-in-out infinite; }
+@keyframes brand-blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.25; } }
 .brand span {
   font-family: var(--font-sans);
   font-size: 1.25rem;
